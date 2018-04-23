@@ -1,0 +1,6 @@
+framework module Pods_XSUtil_Tests {
+  umbrella header "Pods-XSUtil_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "XSUtil",
+  "version": "0.1.0",
+  "summary": "A short description of XSUtil.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git/XSUtil",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git": "huangxuesong@glzc.com"
+  },
+  "source": {
+    "git": "https://github.com/git/XSUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XSUtil/Classes/**/*",
+  "dependencies": {
+    "XSExtension": [
+
+    ],
+    "SnapKit": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_XSUtil_Example {
+  umbrella header "Pods-XSUtil_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
