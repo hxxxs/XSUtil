@@ -30,7 +30,11 @@ class ViewController: UIViewController {
 
 extension ViewController: XSButtonViewDelegate {
     func buttonView(_ buttonView: XSButtonView, didSelectButton index: Int) {
-        print(index)
+        if index % 2 == 0 {
+            XSStatusBarHUD.showSuccess()
+        } else {
+            XSHUD.showSuccess(text: "恭喜你注册成功")
+        }
     }
 }
 

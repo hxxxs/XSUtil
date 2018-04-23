@@ -18,7 +18,7 @@ open class XSHUD {
     
     /// 展示成功状态
     open class func showSuccess(text: String = "成功") {
-        let url = Bundle(for: self).url(forResource: "XSExtension", withExtension: "bundle")
+        let url = Bundle(for: self).url(forResource: "XSUtil", withExtension: "bundle")
         let resourceBundle = Bundle(url: url!)
         let image = UIImage(named: "success_hud", in: resourceBundle, compatibleWith: nil)?.withRenderingMode(.alwaysOriginal)
         show(text: text, image: image)
@@ -26,7 +26,7 @@ open class XSHUD {
     
     /// 展示失败状态
     open class func showError(text: String = "失败") {
-        let url = Bundle(for: self).url(forResource: "XSExtension", withExtension: "bundle")
+        let url = Bundle(for: self).url(forResource: "XSUtil", withExtension: "bundle")
         let resourceBundle = Bundle(url: url!)
         let image = UIImage(named: "error_hud", in: resourceBundle, compatibleWith: nil)?.withRenderingMode(.alwaysOriginal)
         show(text: text, image: image)
