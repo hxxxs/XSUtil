@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         topv.backgroundColor = UIColor.purple
         topv.delegate = self
         view.addSubview(topv)
+        
+        let iv = UIImageView(frame: CGRect(x: 100, y: 250, width: 200, height: 200))
+        view.addSubview(iv)
+
+        let img = setupQRCodeImage(with: "https://www.baidu.com", iconImage: UIImage(imageLiteralResourceName: "3fb66db4085f.jpg"))
+        iv.image = img
     }
 
     override func didReceiveMemoryWarning() {

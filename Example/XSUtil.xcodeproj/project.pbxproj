@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9DE6DFCE22B0A54800B32CD4 /* 3fb66db4085f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DE6DFCD22B0A54800B32CD4 /* 3fb66db4085f.jpg */; };
 		B071C6B0AEC19EBB73A60A16 /* Pods_XSUtil_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB2CF28FDADEF2349ADE31B /* Pods_XSUtil_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +45,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		78EC2FA95ABA5A7C4D943F9B /* Pods-XSUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSUtil_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		941C173AB25BD30CC6AF5480 /* Pods-XSUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSUtil_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSUtil_Tests/Pods-XSUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DE6DFCD22B0A54800B32CD4 /* 3fb66db4085f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3fb66db4085f.jpg; sourceTree = "<group>"; };
 		C8AF9066E8D467346160CCF4 /* Pods-XSUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSUtil_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DCBD41AC3C091A50B07D926D /* XSUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSUtil.podspec; path = ../XSUtil.podspec; sourceTree = "<group>"; };
+		DCBD41AC3C091A50B07D926D /* XSUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSUtil.podspec; path = ../XSUtil.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F54DC6A9B0CC6A4C0C365ACE /* Pods_XSUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		607FACD21AFB9204008FA782 /* Example for XSUtil */ = {
 			isa = PBXGroup;
 			children = (
+				9DE6DFCD22B0A54800B32CD4 /* 3fb66db4085f.jpg */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -226,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -248,6 +252,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				9DE6DFCE22B0A54800B32CD4 /* 3fb66db4085f.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +272,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XSExtension/XSExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/XSUtil/XSUtil.framework",
@@ -280,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XSUtil_Example/Pods-XSUtil_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4CA3A46DA0B11BDFF669F031 /* [CP] Check Pods Manifest.lock */ = {
