@@ -229,7 +229,7 @@ extension String {
     
     /// 手机号
     public var isPhoneNumber: Bool {
-        let regex = "^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+        let regex = "^1(3|4|5|6|7|8|9)\\d{9}$"
         return vaildRegex(regex: regex)
     }
     
@@ -302,24 +302,36 @@ extension Bundle {
 extension Int {
     /// 以 iPhone 6 的屏幕为基准计算水平方向值
     public var adaptWidth: CGFloat {
-        return XSScaleX(CGFloat(self))
+        return CGFloat(self).adaptWidth
     }
     
     /// 以 iPhone 6 的屏幕为基准计算垂直方向值
     public var adaptHeight: CGFloat {
-        return XSScaleY(CGFloat(self))
+        return CGFloat(self).adaptHeight
+    }
+}
+
+extension Double {
+    /// 以 iPhone 6 的屏幕为基准计算水平方向值
+    public var adaptWidth: CGFloat {
+        return CGFloat(self).adaptWidth
+    }
+    
+    /// 以 iPhone 6 的屏幕为基准计算垂直方向值
+    public var adaptHeight: CGFloat {
+        return CGFloat(self).adaptHeight
     }
 }
 
 extension Float {
     /// 以 iPhone 6 的屏幕为基准计算水平方向值
     public var adaptWidth: CGFloat {
-        return XSScaleX(CGFloat(self))
+        return CGFloat(self).adaptWidth
     }
     
     /// 以 iPhone 6 的屏幕为基准计算垂直方向值
     public var adaptHeight: CGFloat {
-        return XSScaleY(CGFloat(self))
+        return CGFloat(self).adaptHeight
     }
 }
 
@@ -329,12 +341,14 @@ extension CGFloat {
     
     /// 以 iPhone 6 的屏幕为基准计算水平方向值
     public var adaptWidth: CGFloat {
-        return XSScaleX(self)
+        let w = UIScreen.main.bounds.width
+        return self * w / 375.0
     }
     
     /// 以 iPhone 6 的屏幕为基准计算垂直方向值
     public var adaptHeight: CGFloat {
-        return XSScaleY(self)
+        let h = UIScreen.main.bounds.height
+        return self * h / 667.0
     }
 }
 

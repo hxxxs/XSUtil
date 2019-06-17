@@ -1,6 +1,6 @@
 {
   "name": "XSUtil",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "summary": "公用类抽取",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/hxxxs",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hxxxs/XSUtil.git",
-    "tag": "0.1.0"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "9.0"
