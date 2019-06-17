@@ -68,7 +68,7 @@ open class XSStatusBarHUD {
         }
         
         window = UIWindow(frame: CGRect(x: 0, y: -hStatusBar, width: wScreen, height: hStatusBar))
-        window?.windowLevel = UIWindowLevelAlert
+        window?.windowLevel = UIWindow.Level.alert
         window?.isHidden = false
         window?.backgroundColor = UIColor.black
         
@@ -90,7 +90,7 @@ open class XSStatusBarHUD {
     
     private func dismiss(delay: TimeInterval) {
         
-        UIView.animate(withDuration: duration, delay: delay + duration, options: UIViewAnimationOptions.allowAnimatedContent, animations: {
+        UIView.animate(withDuration: duration, delay: delay + duration, options: UIView.AnimationOptions.allowAnimatedContent, animations: {
             self.window?.y = -self.window!.height
         }) { (_) in
             self.window = nil

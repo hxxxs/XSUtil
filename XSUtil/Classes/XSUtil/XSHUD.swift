@@ -84,7 +84,7 @@ open class XSHUD {
         }
         
         window = UIWindow()
-        window?.windowLevel = UIWindowLevelAlert
+        window?.windowLevel = UIWindow.Level.alert
         window?.layer.cornerRadius = 6
         window?.layer.masksToBounds = true
         window?.isHidden = false
