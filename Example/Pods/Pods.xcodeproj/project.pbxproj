@@ -900,6 +900,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		018925DE92862418DD8B746BCA263031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92858BFF84FC5D4A0E4931E5145DA9A9 /* XSUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XSUtil/XSUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XSUtil/XSUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XSUtil/XSUtil.modulemap";
+				PRODUCT_MODULE_NAME = XSUtil;
+				PRODUCT_NAME = XSUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		10824FA1E48345887C3A11DA122C85E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92858BFF84FC5D4A0E4931E5145DA9A9 /* XSUtil.xcconfig */;
@@ -915,6 +947,37 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		4148BA94E6371B2704D52B715CE5AD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92858BFF84FC5D4A0E4931E5145DA9A9 /* XSUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XSUtil/XSUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XSUtil/XSUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XSUtil/XSUtil.modulemap";
+				PRODUCT_MODULE_NAME = XSUtil;
+				PRODUCT_NAME = XSUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		465AB6F8A3BA392D9C6AC4B609849F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1216,38 +1279,6 @@
 			};
 			name = Debug;
 		};
-		B9D0D97DBCF097AED290403F1665AE08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92858BFF84FC5D4A0E4931E5145DA9A9 /* XSUtil.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XSUtil/XSUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XSUtil/XSUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XSUtil/XSUtil.modulemap";
-				PRODUCT_MODULE_NAME = XSUtil;
-				PRODUCT_NAME = XSUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C451653B8A5DC6ECA28660D72EACE786 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4833CF6532FA5B07A3C7DE443EA59EC1 /* SnapKit.xcconfig */;
@@ -1279,37 +1310,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D819DBFEFD298244891CA79EC7A8D35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92858BFF84FC5D4A0E4931E5145DA9A9 /* XSUtil.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XSUtil/XSUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XSUtil/XSUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XSUtil/XSUtil.modulemap";
-				PRODUCT_MODULE_NAME = XSUtil;
-				PRODUCT_NAME = XSUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		DAE388D024ADA0A2C59115F0AECA0F21 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1439,8 +1439,8 @@
 		EA4EF41EFED25F7CF3256C7EABC6ABC3 /* Build configuration list for PBXNativeTarget "XSUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D819DBFEFD298244891CA79EC7A8D35E /* Debug */,
-				B9D0D97DBCF097AED290403F1665AE08 /* Release */,
+				4148BA94E6371B2704D52B715CE5AD4C /* Debug */,
+				018925DE92862418DD8B746BCA263031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

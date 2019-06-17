@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XSUtil'
-  s.version          = '0.1.0'
+  s.version          = '0.1.5'
   s.summary          = '公用类抽取'
 
 # This description is used to generate tags and improve search results.
@@ -40,6 +40,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'XSExtension'
   s.dependency 'SnapKit'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
 end
