@@ -1,7 +1,7 @@
 PODS:
   - SnapKit (4.2.0)
-  - XSExtension (1.1.6)
-  - XSUtil (0.1.5):
+  - XSExtension (2.0.0)
+  - XSUtil (1.0.0):
     - SnapKit
     - XSExtension
 
@@ -19,8 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  XSExtension: fe52c53226d2aeeeaf358939c9f4edc337f72a3f
-  XSUtil: 5b5d302f9710b3d0525bc4e8f7de119c55a5b9e5
+  XSExtension: e5ac7cd0eccf46dd18677b8d959b3a5148f3653f
+  XSUtil: 2f700e3ea3e33696b5e1d58b64a78b2dbac5490c
 
 PODFILE CHECKSUM: 4c818fa14b46a3a1ff4a1a149e6803a0698e44d8
 
