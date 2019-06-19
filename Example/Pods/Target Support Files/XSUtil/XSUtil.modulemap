@@ -1,6 +1,0 @@
-framework module XSUtil {
-  umbrella header "XSUtil-umbrella.h"
-
-  export *
-  module * { export * }
-}
