@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'XSUtil_Example' do
+  pod 'XSUtil', :path => '../'
+
+  target 'XSUtil_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
