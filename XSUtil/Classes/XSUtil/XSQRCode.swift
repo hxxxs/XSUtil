@@ -53,9 +53,9 @@ func syntheticImage(_ qrCodeImage: UIImage,
     //  2. 绘制二维码图片
     qrCodeImage.draw(in: CGRect(origin: CGPoint.zero, size: qrCodeImage.size))
     //  3. 绘制头像
-    let x = (qrCodeImage.size.width - 100) / 2
-    let y = (qrCodeImage.size.height - 100) / 2
-    iconImage.draw(in: CGRect(x: x, y: y, width: 100, height: 100))
+    let x = (qrCodeImage.size.width - 80) / 2
+    let y = (qrCodeImage.size.height - 80) / 2
+    iconImage.draw(in: CGRect(x: x, y: y, width: 80, height: 80))
     //  4. 取出图片
     let syntheticImage = UIGraphicsGetImageFromCurrentImageContext()
     //  5. 关闭上下文

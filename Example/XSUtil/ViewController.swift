@@ -39,7 +39,7 @@ extension ViewController: XSButtonViewDelegate {
         if index % 2 == 0 {
             XSStatusBarHUD.showSuccess()
         } else {
-            XSHUD.showSuccess(text: "恭喜你注册成功")
+            XSHUD.show(text: "恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功恭喜你注册成功")
         }
     }
 }

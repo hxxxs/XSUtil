@@ -61,6 +61,11 @@ open class XSHUD {
         shared.delay = interval
     }
     
+    /// 设置最大宽度
+    open class func setMaxWidth(width: CGFloat) {
+        shared.maxWidth = width
+    }
+    
     // MARK: -
     /// 单例
     private static let shared = XSHUD()
@@ -69,13 +74,16 @@ open class XSHUD {
     private var window: UIWindow?
     
     /// 文本框
-    private lazy var textLabel = UILabel(textColor: UIColor.white)
+    private lazy var textLabel = UILabel(textColor: UIColor.white, numberOfLines: 0)
     
     /// 图标
     private lazy var iconView = UIImageView()
     
     /// 最小消失延迟
     private var delay: TimeInterval = 1.5
+    
+    /// 最大宽度
+    private var maxWidth: CGFloat = 250
     
     /// 展示文本
     private func show(text: String, image: UIImage? = nil) {
@@ -95,10 +103,11 @@ open class XSHUD {
         iconView.sizeToFit()
         
         window?.addSubview(textLabel)
+        let margin: CGFloat = 20
+        textLabel.width = maxWidth - 2 * margin
         textLabel.text = text
         textLabel.sizeToFit()
         
-        let margin: CGFloat = 20
         var w = max(iconView.width, textLabel.width) + margin * 2
         let h = iconView.height + 10 + textLabel.height + margin * 2
         w = max(w, h)
